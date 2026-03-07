@@ -170,7 +170,7 @@ Esto facilita mantener una estructura clara y modular.
 
 ## 1. Clonar el repositorio
 
-git clone https://github.com/tuusuario/nombre-del-repo.git
+git clone https://github.com/alejandromendozah/yukapioca-mobile-app.git
 
 ## 2. Instalar dependencias
 
