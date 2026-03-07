@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "name": "Playera Yukapioca",
+    "price": 250,
+    "description": "Playera oficial de Yukapioca",
+    "image": "playera.png"
+  },
+  {
+    "id": 2,
+    "name": "Taza Yukapioca",
+    "price": 120,
+    "description": "Taza edición especial Yukapioca",
+    "image": "taza.png"
+  },
+  {
+    "id": 3,
+    "name": "Bebida Yukapioca",
+    "price": 80,
+    "description": "Bebida refrescante Yukapioca",
+    "image": "bebidas.png",
+    "badge": "🔥 Oferta"
+  },
+  {
+    "id": 4,
+    "name": "Bebida Yucapioca 2",
+    "price": 60,
+    "description": "Bebida refrescante Yukapioca",
+    "image": "drink.png"
+  }
+]

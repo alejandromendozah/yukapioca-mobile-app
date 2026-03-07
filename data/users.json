@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "email": "admin@yukapioca.com",
+    "password": "123456",
+    "name": "Admin"
+  },
+  {
+    "id": 2,
+    "email": "jesus.bernal@yukapioca.com",
+    "password": "123456",
+    "name": "Jesús Bernal"
+  }
+]

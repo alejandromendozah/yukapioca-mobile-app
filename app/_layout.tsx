@@ -1,24 +1,33 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
-
-import { useColorScheme } from '@/hooks/use-color-scheme';
-
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
+import { Stack } from "expo-router";
+import { StatusBar } from "expo-status-bar";
+import Toast from "react-native-toast-message";
+import { CartProvider } from "../context/CartContext";
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
+    <CartProvider>
+
+      <Stack
+        screenOptions={{
+          headerShown:false
+        }}
+      >
+
+        <Stack.Screen name="index"/>
+        <Stack.Screen name="home"/>
+        <Stack.Screen name="portal"/>
+        <Stack.Screen name="stores"/>
+        <Stack.Screen name="shop"/>
+        <Stack.Screen name="cart"/>
+        <Stack.Screen name="profile"/>
+        <Stack.Screen name="product/[id]"/>
+
       </Stack>
+
       <StatusBar style="auto" />
-    </ThemeProvider>
+      <Toast />
+
+    </CartProvider>
   );
 }
