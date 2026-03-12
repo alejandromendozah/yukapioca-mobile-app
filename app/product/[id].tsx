@@ -12,6 +12,7 @@ import {
 import Toast from "react-native-toast-message";
 
 import Header from "../../components/Headers";
+import MainLayout from "../../components/MainLayout";
 import { Colors } from "../../constants/colors";
 import { useCart } from "../../context/CartContext";
 
@@ -58,46 +59,50 @@ export default function ProductDetail(){
 
   return (
 
-    <View style={{ flex:1 }}>
+    <MainLayout>
 
-      <Header title="Producto" />
+      <View style={{ flex:1 }}>
 
-      <View style={styles.container}>
+        <Header title="Producto" />
 
-        <Image
-          source={productImages[product.image]}
-          style={styles.image}
-          resizeMode="contain"
-        />
+        <View style={styles.container}>
 
-        <Text style={styles.name}>
-          {product.name}
-        </Text>
+          <Image
+            source={productImages[product.image]}
+            style={styles.image}
+            resizeMode="contain"
+          />
 
-        <Text style={styles.price}>
-          ${product.price}
-        </Text>
+          <Text style={styles.name}>
+            {product.name}
+          </Text>
 
-        <Text style={styles.description}>
-          {product.description}
-        </Text>
+          <Text style={styles.price}>
+            ${product.price}
+          </Text>
 
-        <Animated.View style={{ transform:[{ scale }] }}>
+          <Text style={styles.description}>
+            {product.description}
+          </Text>
 
-          <TouchableOpacity
-            style={styles.button}
-            onPress={handleAdd}
-          >
-            <Text style={styles.buttonText}>
-              Agregar al carrito
-            </Text>
-          </TouchableOpacity>
+          <Animated.View style={{ transform:[{ scale }] }}>
 
-        </Animated.View>
+            <TouchableOpacity
+              style={styles.button}
+              onPress={handleAdd}
+            >
+              <Text style={styles.buttonText}>
+                Agregar al carrito
+              </Text>
+            </TouchableOpacity>
+
+          </Animated.View>
+
+        </View>
 
       </View>
 
-    </View>
+    </MainLayout>
 
   );
 }

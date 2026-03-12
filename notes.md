@@ -41,4 +41,6 @@ En particular lograr que al seleccionar una sucursal desde la lista el mapa hici
 ## ¿Qué agregarías con más tiempo?
 
 Agregaría búsqueda y filtros en la tienda, manejo de cantidades en el carrito y persistencia del carrito. 
+
 También integraría una API real para productos y sucursales y mejoraría algunos detalles de UX y animaciones.
+
