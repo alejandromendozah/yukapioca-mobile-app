@@ -239,5 +239,16 @@ react-native-webview
 ## Confirma Cierre Sesión
 ![Carrito](screenshots/confirmaCerrarS.PNG)
 
+## Implementación Web
+
+## Menú en detalle
+![Carrito](screenshots/Menu_en_Detalle.png)
+
+## Mapas en la Web
+![Carrito](screenshots/Mapas_Web.png)
+
+## Manejo de Error en Página Web desde la Web
+![Carrito](screenshots/Web_visualWeb.png)
+
 # Prueba técnica, César Alejandro Mendoza Hernández
 Proyecto desarrollado como prueba técnica de aplicación móvil.
